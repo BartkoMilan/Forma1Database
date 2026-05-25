@@ -1,0 +1,34 @@
+backend tutorial:
+-adatbazis elinditása
+-visual studio 2022
+-ASP.NET Core Web API
+-torolni a WeatherForecast.cs es a Controllers folderben a WeatherForecastController.cs
+-manage nuget packages a solutions explorer nel jobb oldalt
+-browse
+--mysql.entityframeworkcore
+--Microsoft.entityframeworkcore
+--Microsoft.entityframeworkcore.tools
+-felul tools
+-nuget package manager
+-packe manager console
+-consolba irni:
+-Scaffold-DbContext "SERVER=localhost;PORT=3306;DATABASE=---adatbazisneveide---;USER=root;PASSWORD=;" mysql.entityframeworkcore -outputdir Models -f
+-a models konyvtar hoz hozza lettek adva a tablak
+-ha valami plusz kod kell, a program.cs be var.app=builder.Build(); rész felé kell be ileszteni
+-a controlers tablaban controlert adunk hozza(az öszes tabla hoz tartozik egy controler):
+--controllers folder job click
+--add
+--controller
+--baloldalt a common API
+--API Controller - Empty
+--ContolerneveController.cs
+--add
+-egy controller alapveto megcsinalasa(nem async os) get post put deldte(forma1 backend projet segithet)
+--using Adatbazisneve.Models; ezt a legfelso sorba
+--?. lehet kell egy [JsonIgnore] a letre hozot tablakal megegyezo programok utolso sora felé
+--?. lehet kell egy ? a letre hozot tablakal megegyezo programok utolso sora zöld része mőgé
+--1. [HttpGet]
+--2. [HttpPost]
+--3. [HttpPut]
+--4. [HttpDelete("{id}")]
+-forma1 backend segit
